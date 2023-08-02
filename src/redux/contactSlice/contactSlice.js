@@ -49,28 +49,6 @@ export const contactsSlice = createSlice({
       .addCase(deleteContact.pending, handlePending)
       .addCase(deleteContact.fulfilled, handleDeleteContactsFulfilled)
       .addCase(deleteContact.rejected, handleRejected),
-
-  // reducers: {
-  //   addContact(state, action) {
-  //     state.push(action.payload);
-  //   },
-
-  // deleteContact(state, action) {
-  //   const contactId = action.payload;
-
-  //   state.contacts = state.contacts.filter(
-  //     contact => contact.id !== contactId
-  //   );
-  // },
-
-  // deleteContact(state, action) {
-  //   const contactId = action.payload;
-  //   return state.filter(contact => contact.id !== contactId);
-  // },
-
-  // filterContact(state, action) {
-  //   state.filter = action.payload;
-  // },
 });
 
 export const { fetchingInProgress, fetchingSuccess, fetchingError } =
