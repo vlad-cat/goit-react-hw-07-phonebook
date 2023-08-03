@@ -27,9 +27,9 @@ const ContactList = () => {
       {isLoading && <p>Loading contacts...</p>}
       {error && <p>{error}</p>}
       <ul className={contactListStyles.list}>
-        {filteredContacts.map(({ id, name, number }) => {
+        {filteredContacts.map(({ id, name, phone }) => {
           return (
-            <ContactListItem key={id} name={name} number={number} id={id} />
+            <ContactListItem key={id} name={name} number={phone} id={id} />
           );
         })}
       </ul>

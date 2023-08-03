@@ -30,7 +30,7 @@ const ContactForm = () => {
     const newContact = {
       id: nanoid(),
       name: formData.contactName,
-      number: formData.contactNumber,
+      phone: formData.contactNumber,
     };
 
     if (
